@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load blog_tags %}
+{% block main %}
+    <article class="post post-{{ post.pk }}">
+        <header class="entry-header">
+            <h1 class="entry-title">
+                <a href="#">{{ post.title }}</a>
+            </h1>
+            <div class="entry-meta">
+                <span class="post-category"><a href="#">{{ post.category }}</a></span>
+                <span class="post-date"><a href="#"><time
+                        class="entry-date">{{ post.created_time }}</time></a></span>
+                <span class="post-author"><a href="#">{{ post.author }}</a></span>
+                {#                            <span class="comments-link"><a href="#">Comment</a></span>#}
+                <span class="views-count"><a href="#">{{ post.view_times }}</a></span>
+            </div>
+        </header>
+        <div class="entry-content clearfix">
+            {{ post.body|safe }}
+        </div>
+    </article>
+{% endblock %}
+
+{% block sidebar %}
+    <div class="widget widget-recent-posts">
+        <h3 class="widget-title">最新文章</h3>
+        {% get_recent_posts as recent_post_list %}
+        <ul>
+            {% for post in recent_post_list %}
+                <li>
+                    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                </li>
+            {% empty %}
+                暂无文章！
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="widget widget-archives">
+        <h3 class="widget-title">归档</h3>
+        {% archives as date_list %}
+        <ul>
+            {% for date in date_list %}
+                <li>
+                    <a href="#">{{ date.year }} 年 {{ date.month }} 月</a>
+                </li>
+            {% empty %}
+                暂无归档！
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="widget widget-category">
+        <h3 class="widget-title">分类</h3>
+        {% get_categories as category_list %}
+        <ul>
+            {% for category in category_list %}
+                <li>
+                    <a href="{% url 'blog:category' category.pk %}">{{ category.name }} <span class="post-count"></span></a>
+                </li>
+            {% empty %}
+                暂无分类！
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="widget widget-tag-cloud">
+        <h3 class="widget-title">标签云</h3>
+        <ul>
+
+        </ul>
+    </div>
+    <div class="rss">
+        <a href=""><span class="ion-social-rss-outline"></span> RSS 订阅</a>
+    </div>
+{% endblock %}
