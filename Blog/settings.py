@@ -25,7 +25,7 @@ SECRET_KEY = '&+2=!d2g0um9xc1j(+6-xvr56x&8hc(gwjcq!vw!+dn#yd%om+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['alanmaxwell.top']
 
 
 # Application definition
