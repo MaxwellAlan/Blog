@@ -25,8 +25,7 @@ SECRET_KEY = '&+2=!d2g0um9xc1j(+6-xvr56x&8hc(gwjcq!vw!+dn#yd%om+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','alanmaxwell.top']
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -123,6 +122,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS=(
-    os.path.join(BASE_DIR, "static"),
-)
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+# STATICFILES_DIRS=(
+#     os.path.join(BASE_DIR, "static"),
+# )
