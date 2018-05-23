@@ -42,7 +42,7 @@
    <header> 
 
    	<div class="header-logo">
-	      <a href="#">AlanMaxwell</a>
+	      <a href="{% url 'my_blog:blog' %}">AlanMaxwell</a>
 	   </div> 
 
 		<a id="header-menu-trigger" href="#0">
@@ -107,7 +107,6 @@
 							<ul class="home-section-links">
 								<li class="animate-intro">More <a href="#about" class="smoothscroll">About Me</a></li>
 								<li class="animate-intro">View <a href="#portfolio" class="smoothscroll">My Works</a></li>
-								<li class="animate-intro">Contact <a href="#contact" class="smoothscroll">By Email</a></li>								
 							</ul>
 
 			  			</div> <!-- end home-bottom-text -->
@@ -148,10 +147,10 @@
 
    			<p class="animate-this">Lorem ipsum Minim nisi dolore proident Ut dolor quis deserunt voluptate Ut voluptate enim ut adipisicing fugiat cupidatat nisi adipisicing labore non adipisicing in sit proident. Ut in qui ea sint occaecat in commodo in in in incididunt ut</p>
 
-   			<p>
-   				<a href="#" class="button full-width animate-this">Contact Me</a>
-   				<a href="#" class="button button-primary full-width animate-this">Download CV</a>
-   			</p>  			
+{#   			<p>#}
+{#   				<a href="#" class="button full-width animate-this">Contact Me</a>#}
+{#   				<a href="#" class="button button-primary full-width animate-this">Download CV</a>#}
+{#   			</p>  			#}
 
    		</div> <!-- end about-profile  -->
 
@@ -170,7 +169,7 @@
    						<i class="icon-RegisteredTrademark"></i>
    					</div>
    					<div class="service-item">
-   						<h4>Branding</h4>
+   						<h4>IoT</h4>
    						<p>Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt.
    						</p>
    					</div>   					
@@ -180,7 +179,7 @@
    						<i class="icon-Picture"></i>
    					</div>
    					<div class="service-item">
-   						<h4>Photography</h4>
+   						<h4>DataMining</h4>
    						<p>Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt.
    						</p>
    					</div>   					
@@ -190,7 +189,7 @@
    						<i class="icon-HTML"></i>
    					</div>
    					<div class="service-item">
-   						<h4>Web Design</h4>
+   						<h4>Machine Learning</h4>
    						<p>Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt.
    						</p>
    					</div>   					
@@ -200,7 +199,7 @@
    						<i class="icon-Checked"></i>
    					</div>
    					<div class="service-item">
-   						<h4>UI/UX Design</h4>
+   						<h4>Full Stack</h4>
    						<p>Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt.
    						</p>
    					</div>   					
@@ -228,34 +227,34 @@
    				<h3 class="animate-this">Skillset</h3>
    			   <h1 class="animate-this">I've Got Some Skills.</h1>
    			
-   			   <p class="animate-this">Lorem ipsum Elit ut consequat veniam eu nulla nulla reprehenderit reprehenderit sit velit in cupidatat ex aliquip ut cupidatat Excepteur tempor id irure sed dolore sint sunt voluptate ullamco nulla qui Duis qui culpa voluptate enim ea aute qui veniam in irure et nisi nostrud deserunt est officia minim.</p>
+   			   <p class="animate-this">.</p>
    			</div>
 
    			<ul class="skill-bars">
 				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>HTML5</strong>
+				   	<div class="progress percent40"><span>40%</span></div>
+				   	<strong>Python/Java/C</strong>
 				   </li>
 				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent85"><span>85%</span></div>
-				   	<strong>CSS3</strong>
+				   	<div class="progress percent40"><span>40%</span></div>
+				   	<strong>DM,ML & DL</strong>
 				   </li>
 				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent70"><span>70%</span></div>
-				   	<strong>JQuery</strong>
+				   	<div class="progress percent30"><span>30%</span></div>
+				   	<strong>Html/Css/JavaScript</strong>
 				   </li>
 				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent95"><span>95%</span></div>
-				   	<strong>PHP</strong>
+				   	<div class="progress percent60"><span>60%</span></div>
+				   	<strong>C51/ARM/DSP/FPGA</strong>
 				   </li>
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>Wordpress</strong>
-				   </li>   
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>Angular JS</strong>
-				   </li>   
+{#				   <li class="animate-this" data-animate="fadeInRight">#}
+{#				   	<div class="progress percent75"><span>75%</span></div>#}
+{#				   	<strong></strong>#}
+{#				   </li>   #}
+{#				   <li class="animate-this" data-animate="fadeInRight">#}
+{#				   	<div class="progress percent90"><span>90%</span></div>#}
+{#				   	<strong>Angular JS</strong>#}
+{#				   </li>   #}
 				</ul>
    			
    		</div> <!-- end col-six -->
@@ -291,12 +290,12 @@
 	   					<i class="fa fa-briefcase"></i>
 	   				</div>
 	   				<div class="timeline-header">
-	   					<p class="timeframe">July 2015 - Present</p>
-	   					<h3>Awesome Studio</h3>
-	   					<h4>UI Designer</h4>	   					
+	   					<p class="timeframe">April 2018 - Present</p>
+	   					<h3>Xi'an Tobacco Monopoly Bureau</h3>
+	   					<h4>Data Analysis Intern</h4>
 	   				</div>
 	   				<div class="timeline-content">	   					
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+	   					<p></p>
 	   				</div>
 	   			</div> <!-- end timeline-block -->
 
@@ -305,28 +304,28 @@
 	   					<i class="fa fa-briefcase"></i>
 	   				</div>
 	   				<div class="timeline-header">
-	   					<p class="timeframe">July 2014 - June 2015</p>
-	   					<h3>Super Cool Agency</h3>
-	   					<h4>Front-end Developer</h4>	   				
+	   					<p class="timeframe">March 2016 - April 2017</p>
+	   					<h3>Xi'an Dundu Robot Training Institution</h3>
+	   					<h4>Part-time Lecturer</h4>
 	   				</div>
 	   				<div class="timeline-desc">	   					
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   					<p>.</p>
 	   				</div>
 	   			</div> <!-- end timeline-block -->
 
-	   			<div class="timeline-block animate-this">
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-	   				<div class="timeline-header">
-	   					<p class="timeframe">May 2013 - June 2014</p>
-	   					<h3>Great Designs Studio</h3>
-	   					<h4>Web Designer</h4>	   					
-	   				</div>
-	   				<div class="timeline-content">	   					
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-	   				</div>
-	   			</div> <!-- end timeline-block -->
+{#	   			<div class="timeline-block animate-this">#}
+{#	   				<div class="timeline-ico">#}
+{#	   					<i class="fa fa-briefcase"></i>#}
+{#	   				</div>#}
+{#	   				<div class="timeline-header">#}
+{#	   					<p class="timeframe">May 2013 - June 2014</p>#}
+{#	   					<h3>Great Designs Studio</h3>#}
+{#	   					<h4>Web Designer</h4>	   					#}
+{#	   				</div>#}
+{#	   				<div class="timeline-content">	   					#}
+{#	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>#}
+{#	   				</div>#}
+{#	   			</div> <!-- end timeline-block -->#}
 
    			</div> <!-- end timeline-wrap -->				
    		
@@ -343,12 +342,12 @@
 	   					<i class="fa fa-graduation-cap"></i>
 	   				</div>
 	   				<div class="timeline-header">
-	   					<p class="timeframe">June 2012 - April 2013</p>
-	   					<h3>University of Life</h3>
+	   					<p class="timeframe">September 2016 - June 2019</p>
+	   					<h3>Xi'an Jiaotong University</h3>
 	   					<h4>Master Degree</h4>	   					
 	   				</div>
 	   				<div class="timeline-content">	   					
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+	   					<p>Control Science and Engineering.</p>
 	   				</div>
 	   			</div> <!-- end timeline-block -->
 
@@ -357,28 +356,13 @@
 	   					<i class="fa fa-graduation-cap"></i>
 	   				</div>
 	   				<div class="timeline-header">
-	   					<p class="timeframe">June 2008 - March 2012</p>
-	   					<h3>State Design University</h3>
+	   					<p class="timeframe">September 2012 - June 2016</p>
+	   					<h3>Xi'an Jiaotong University</h3>
 	   					<h4>Bachelor Degree</h4>	   				
 	   				</div>
 	   				<div class="timeline-desc">	   					
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   					<p>Electrical Engineering.</p>
 	   				</div>
-	   			</div> <!-- end timeline-block -->
-
-	   			<div class="timeline-block animate-this">
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
-	   				<div class="timeline-header">
-	   					<p class="timeframe">June 2006 - October 2008</p>
-	   					<h3>Design College</h3>
-	   					<h4>Bachelor Degree</h4>	   					
-	   				</div>
-	   				<div class="timeline-content">	   					
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-	   				</div>
-
 	   			</div> <!-- end timeline-block -->
 
    			</div> <!-- end timeline-wrap -->	   		
